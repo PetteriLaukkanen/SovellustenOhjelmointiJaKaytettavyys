@@ -1,0 +1,59 @@
+fun main() {
+    // 1. Vakiolista viikonpäivistä
+    val viikonpaivat = listOf("Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai", "Sunnuntai")
+    
+    // Käydään viikonpäivät läpi silmukassa ja tulostetaan ne
+    println("Viikonpäivät:")
+    for (paiva in viikonpaivat) {
+        println(paiva)
+    }
+    
+    // 2. Muokattava ostoslista
+    val ostoslista = mutableListOf("Maito", "Leipä", "Voi")
+    
+    // Tulostetaan aluksi ostoslista
+    println("\nOstoslista alussa:")
+    for (ostos in ostoslista) {
+        println(ostos)
+    }
+    
+    // Lisätään ostoslistalle tuotteita
+    ostoslista.add("Juusto")
+    ostoslista.add("Kahvi")
+    ostoslista.add("Kananmunat")
+    
+    // Tulostetaan ostoslista lisäysten jälkeen
+    println("\nOstoslista lisäysten jälkeen:")
+    for (ostos in ostoslista) {
+        println(ostos)
+    }
+    
+    // 3. Etsitään tuotteita ostoslistasta
+    val tuote = "Kahvi"
+    if (ostoslista.contains(tuote)) {
+        println("\nOstoslista sisältää tuotteen: $tuote")
+    } else {
+        println("\nOstoslista ei sisällä tuotetta: $tuote")
+    }
+    
+    // 4. Poistetaan tuotteita ostoslistalta
+    ostoslista.remove("Leipä")
+    
+    // Tulostetaan ostoslista poiston jälkeen
+    println("\nOstoslista poiston jälkeen:")
+    for (ostos in ostoslista) {
+        println(ostos)
+    }
+    
+   //When käyttö
+   println("\nKokeen arvosana: ")
+    val pisteet = 78
+    when (pisteet) {
+        in 90..100 -> println("Erinomainen")
+        in 75..89 -> println("Hyvä")
+        in 60..74 -> println("Tyydyttävä")
+        in 50..59 -> println("Välttävä")
+        in 0..49 -> println("Hylätty")
+        else -> println("Virheelliset pisteet")
+    }
+}
