@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PolttoaineenHintaLaskuri</string>
+    <string name="Title">Kulutus laskuri</string>
+    <string name="Price">Polttoaineen hinta (€/l)</string>
+    <string name="Consumption">Auton kulutus (l/100km)</string>
+    <string name="Distance">Matkan pituus (km)</string>
+    <string name="Button">Laske hinta</string>
+    <string name="Total">Kokonaiskustannus: €%1$s</string>
+</resources>

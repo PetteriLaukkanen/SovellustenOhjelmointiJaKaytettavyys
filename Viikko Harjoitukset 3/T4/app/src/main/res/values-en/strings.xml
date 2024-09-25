@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Consumption calculator</string>
+    <string name="Title">Consumption calculator</string>
+    <string name="Price">Fuel price (€/l)</string>
+    <string name="Consumption">Consumption (l/100km)</string>
+    <string name="Distance">Distance (km)</string>
+    <string name="Button">Calculate price</string>
+    <string name="Total">Total cost: €%1$s</string>
+</resources>
